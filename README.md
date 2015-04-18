@@ -11,4 +11,4 @@
 ## Pre-Approval Form
 ![wireframe-1]
 
-[wireframe-1]: ./docs/wireframe_1.jpeg
+[wireframe-1]: ./docs/wireframe_1.jpg
