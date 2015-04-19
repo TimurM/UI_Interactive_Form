@@ -70,19 +70,20 @@
     </form> -->
 
     <form id="myform">
+      <p>Pre-Approval Questions</p>
       <div class="inputs">
-        <label for="field1">Name</label>
-        <input type="text" name="field1" value="Enter Your Name"/>
+        <label for="field1">Enter Your Name</label>
+        <input type="text" name="field1" placeholder="Simon" onfocus="this.placeholder = 'Simon'" onblur="this.placeholder = 'Simon'" />
       </div>
       <br/>
       <div class="inputs">
-        <label for="field2">Date</label>
-        <input type="text" name="field2" value="07/19/2015" />
+        <label for="field2">Date of Birth</label>
+        <input type="text" name="field2" placeholder="07/04/1990" onfocus="this.placeholder = '07/04/1990'" onblur="this.placeholder = '07/04/1990'" />
       </div>
       <br/>
       <div class="inputs">
-        <label for="field3">Social Security</label>
-        <input type="text" name="field3" value="119444909"/>
+        <label for="field3">Social Security Number</label>
+        <input type="text" name="field3" placeholder="899814567" onfocus="this.placeholder = '899814567'" onblur="this.placeholder = '899814567'"/>
       </div>
       <br/>
       <input type="submit" value="Get Pre-Approved"/>
