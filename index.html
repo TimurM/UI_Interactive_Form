@@ -48,8 +48,25 @@
       </div>
     </main>
 
-    <form>
+    <form id="approval-form" action="index.html" method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required/>
+      </div>
 
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" required/>
+      </div>
+
+      <div>
+        <label for="social">Social Security Number:</label>
+        <input type="text" id="social" required/>
+      </div>
+
+      <div class="button">
+        <button type="submit">Get Pre-Approved</button>
+      </div>
     </form>
 
     <footer>
