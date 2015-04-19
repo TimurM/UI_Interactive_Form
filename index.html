@@ -48,25 +48,44 @@
       </div>
     </main>
 
-    <form id="approval-form" action="index.html" method="post">
+    <!-- <form id="approval-form" action="index.html" method="post">
       <div>
         <label for="name">Name:</label>
-        <input type="text" id="name" required/>
+        <input type="text" id="name"/>
       </div>
 
       <div>
         <label for="email">Email:</label>
-        <input type="text" id="email" required/>
+        <input type="text" id="email"/>
       </div>
 
       <div>
         <label for="social">Social Security Number:</label>
-        <input type="text" id="social" required/>
+        <input type="text" id="social"/>
       </div>
 
       <div class="button">
         <button type="submit">Get Pre-Approved</button>
       </div>
+    </form> -->
+
+    <form id="myform">
+      <div class="inputs">
+        <label for="field1">Name</label>
+        <input type="text" name="field1" value="Enter Your Name"/>
+      </div>
+      <br/>
+      <div class="inputs">
+        <label for="field2">Date</label>
+        <input type="text" name="field2" value="07/19/2015" />
+      </div>
+      <br/>
+      <div class="inputs">
+        <label for="field3">Social Security</label>
+        <input type="text" name="field3" value="119444909"/>
+      </div>
+      <br/>
+      <input type="submit" value="Get Pre-Approved"/>
     </form>
 
     <footer>
@@ -74,5 +93,10 @@
         footer content here
       </div>
     </footer>
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.serializeJSON.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
