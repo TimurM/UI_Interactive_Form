@@ -12,15 +12,16 @@ $(document).ready(function () {
     rules: {
       field1: {
         required: true,
-        email: true
+        minlength: 5
       },
       field2: {
         required: true,
-        date: 5
+        date: true
       },
       field3: {
         required: true,
-        minlength: 9
+        minlength: 9,
+        maxlength: 9
       }
     },
     submitHandler: function (form) { // for demo
