@@ -1,10 +1,5 @@
 
-// $("#approval-form").submit(function(event) {
-//   event.preventDefault();
-//   var $inputs = $(event.currentTarget).serializeJSON();
-//
-//   console.log($inputs);
-// });
+
 
 $(document).ready(function () {
 
@@ -24,10 +19,30 @@ $(document).ready(function () {
         maxlength: 9
       }
     },
-    submitHandler: function (form) { // for demo
-      alert('valid form submitted'); // for demo
-      return false; // for demo
-    }
+
+    submitHandler: function (form) {
+
+      $(".progress").show();
+      $(".meter > span").each(function() {
+        $(this)
+        .data("origWidth", $(this).width())
+        .width(0)
+        .animate({
+          width: $(this).data("origWidth") // or + "%" if fluid
+        }, 5000)
+
+      setTimeout(function() {
+        $(".progress").hide();
+        $("#myform p").html("You have been approved!").css({"color": "#00BC6F", "font-weight": "bold"});
+      }, 5000);
+      });
+    },
+
+
   });
 
+  // $("#myform").submit(function( event ) {
+  //   alert( "Handler for .submit() called." );
+  //   event.preventDefault();
+  // });
 });
