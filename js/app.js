@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
 
-  $('#myform').validate({ // initialize the plugin
+  $('#myform').validate({
     rules: {
       field1: {
         required: true,
@@ -40,9 +40,4 @@ $(document).ready(function () {
 
 
   });
-
-  // $("#myform").submit(function( event ) {
-  //   alert( "Handler for .submit() called." );
-  //   event.preventDefault();
-  // });
 });
