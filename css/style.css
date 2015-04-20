@@ -1,3 +1,11 @@
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #tips-pannels { display: none; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  #tips-pannels { display: block; }   /* hide it elsewhere */
+}
+
 html {
   box-sizing: border-box;
 }
